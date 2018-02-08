@@ -6,16 +6,7 @@ public class _4mergeSort {
     private int[] tempArray;
     private int length;
 
-    public static void main(String[] args) {
-        System.out.println("--------MergeSort-----------");
-        int[] arr = {4, 3, 2, 1, 0};
-        _4mergeSort mms = new _4mergeSort();
-        mms.sort(arr);
-        for (int i : arr) {
-            System.out.print(i);
-            System.out.print(" ");
-        }
-    }
+
 
     //sorting function (merge);
     public void sort(int[] arr) {
@@ -69,6 +60,17 @@ public class _4mergeSort {
         }
         // Since we are sorting in-place any leftover elements from the right side
         // are already at the right position.
+    }
+    
+        public static void main(String[] args) {
+        System.out.println("--------MergeSort-----------");
+        int[] arr = {4, 3, 2, 1, 0};
+        _4mergeSort mms = new _4mergeSort();
+        mms.sort(arr);
+        for (int i : arr) {
+            System.out.print(i);
+            System.out.print(" ");
+        }
     }
 
 
