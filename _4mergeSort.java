@@ -21,7 +21,7 @@ public class _4mergeSort {
         if (low < high) {
             // get the index of the element which is in the middle
             int middle = low + (high - low) / 2;
-            // sort the right side of the array;
+            // sort the left side of the array;
             doMergeSort(low, middle);
             // sort the right side of the array;
             doMergeSort(middle + 1, high);
